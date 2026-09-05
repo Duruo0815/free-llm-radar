@@ -1,5 +1,54 @@
 [
   {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "google-ai-studio",
+    "name": "Google AI Studio"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "github-models",
+    "name": "GitHub Models"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "mistral",
+    "name": "Mistral La Plateforme"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "huggingface",
+    "name": "Hugging Face 推理"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "bai",
+    "name": "B.AI"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "copilot",
+    "name": "GitHub Copilot Free"
+  },
+  {
+    "t": "2026-09-05T14:36:35.127Z",
+    "type": "up",
+    "view": "cn",
+    "id": "antigravity",
+    "name": "Google Antigravity"
+  },
+  {
     "t": "2026-09-05T10:57:30.877Z",
     "type": "down",
     "view": "intl",
