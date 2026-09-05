@@ -74,9 +74,28 @@ node scripts/build.mjs
 
 ## 国内视角接入（三选一）
 
-- **GitHub self-hosted runner（推荐）**：在国内常开的机器/服务器上注册 runner，label 设为 `cn`，`probe-cn.yml` 会每 6 小时自动运行；
-- **国内 VPS 定时任务**：`crontab` 每 6 小时执行 `node scripts/probe.mjs --view=cn && node scripts/build.mjs && git commit/push`；
-- **本地手动**：随时跑 `--view=cn`，数据与本机网络环境对应。
+- **方案 A：本机 Windows 计划任务（已内置，零成本）**
+  运行 `scripts/register-task.ps1`（管理员不需要，普通权限即可）注册名为 `FreeLLMRadar-CN-Probe` 的计划任务：
+  每 6 小时自动执行 `scripts/cn-update.cmd`（拉取仓库 → 国内视角探活 → 变更追踪 → 推送通知 → 构建并推送），
+  电脑关机期间错过的轮次会在下次开机后自动补跑（StartWhenAvailable）。日志在 `logs/cn-probe.log`。
+  删除任务：`schtasks /delete /tn FreeLLMRadar-CN-Probe /f`。
+  局限：电脑关机时该视角不更新（其余视角不受影响）。
+- **方案 B：GitHub self-hosted runner（推荐 24/7 常驻）**
+  在国内常开的机器/服务器上注册 runner，label 设为 `cn`，`probe-cn.yml` 会每 6 小时自动运行；
+- **方案 C：国内 VPS 定时任务**
+  `crontab` 每 6 小时执行 `node scripts/probe.mjs --view=cn && node scripts/track-changes.mjs && node scripts/build.mjs && git add/commit/push`。
+
+## Cloudflare Pages 镜像（国内访问更稳）
+
+`*.github.io` 在国内直连经常不稳定。你已有 Cloudflare 账号的话，5 分钟可以把同一仓库镜像到 Cloudflare Pages（数据仍由 GitHub Actions 探活更新，CF 只做静态托管，两边内容完全一致）：
+
+1. Cloudflare 控制台 → **Workers & Pages → Create → Pages → Connect to Git**，授权并选择 `Duruo0815/free-llm-radar` 仓库；
+2. 构建设置：**Framework preset 选 None；Build command 留空；Build output directory 填 `site`**；其余默认；
+3. Save and Deploy。首次部署完成后获得 `https://free-llm-radar.pages.dev` 地址；
+4. 之后每次 Actions 探活提交新数据都会自动触发 CF 重新构建（可在 CF Pages 项目的 Settings → Builds 里把分支设为 `main`）；
+5. 想要国内更稳的访问：CF Pages 项目 → **Custom domains** 绑定一个自己的域名（套 CF 代理）。`pages.dev` 域名在国内的可达性一般，自定义域名走 CF 节点通常明显更好。
+
+> 注意：CF Pages 只是"读"仓库里 Actions 已提交好的 `site/`，它自己不跑探活（CF 构建环境无法代表国内/国际网络视角）。探活永远由 GitHub Actions + 国内探活源完成。
 
 ## 部署到 GitHub Pages
 
