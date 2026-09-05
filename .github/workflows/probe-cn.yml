@@ -9,14 +9,12 @@ on:
     - cron: "45 */6 * * *"
   workflow_dispatch:
 
+# 注意：不与其他工作流共用 concurrency 组——没有 cn runner 时本工作流会一直排队，
+# 若共用组会把国际视角的部署堵死。deploy-pages 本身是原子操作，两个工作流独立部署互不冲突。
 permissions:
   contents: write
   pages: write
   id-token: write
-
-concurrency:
-  group: probe-and-deploy
-  cancel-in-progress: false
 
 jobs:
   probe-cn:
