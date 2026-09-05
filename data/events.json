@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-09-05T14:48:39.310Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-09-05T14:36:35.127Z",
     "type": "up",
     "view": "cn",
