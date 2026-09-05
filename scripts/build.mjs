@@ -10,14 +10,15 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = async (name, fallback) =>
   readFile(path.join(root, 'data', name), 'utf8').then(JSON.parse).catch(() => fallback);
 
-const [providers, intl, cn, histIntl, histCn, freeModels, events] = await Promise.all([
+const [providers, intl, cn, histIntl, histCn, freeModels, eventsIntl, eventsCn] = await Promise.all([
   readJson('providers.json', []),
   readJson('status.json', { lastRun: null, results: {} }),
   readJson('status-cn.json', null),
   readJson('history.json', []),
   readJson('history-cn.json', []),
   readJson('free-models.json', { sites: {} }),
-  readJson('events.json', []),
+  readJson('events-intl.json', []),
+  readJson('events-cn.json', []),
 ]);
 
 const views = {
@@ -25,7 +26,11 @@ const views = {
 };
 if (cn?.lastRun) views.cn = { lastRun: cn.lastRun, results: cn.results || {}, history: histCn };
 
-const data = { generatedAt: intl.lastRun, views, freeModels: freeModels.sites || {}, events: events.slice(0, 40), providers };
+const events = [...eventsIntl, ...eventsCn]
+  .sort((a, b) => (a.t < b.t ? 1 : -1))
+  .slice(0, 40);
+
+const data = { generatedAt: intl.lastRun, views, freeModels: freeModels.sites || {}, events, providers };
 const js = `/* 由 scripts/build.mjs 自动生成，请勿手改 */\nwindow.RADAR_DATA = ${JSON.stringify(data)};\n`;
 await writeFile(path.join(root, 'site', 'data.js'), js);
 

@@ -8,7 +8,7 @@ const keyEnvs = [...new Set(probes.filter((x) => x.probe.keyEnv).map((x) => x.pr
 console.log('providers:', p.length, '| probe 配置:', probes.length, '| 需密钥:', keyEnvs.length);
 
 let fail = 0;
-for (const wf of ['.github/workflows/probe.yml', '.github/workflows/probe-cn.yml']) {
+for (const wf of ['.github/workflows/probe-core.yml']) {
   const yml = await readFile(wf, 'utf8');
   const missing = keyEnvs.filter((k) => !yml.includes(k + ':'));
   if (missing.length) { fail++; console.log('✗', wf, '缺少 env:', missing.join(', ')); }

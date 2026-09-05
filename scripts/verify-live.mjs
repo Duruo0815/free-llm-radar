@@ -1,8 +1,9 @@
-// 验证线上站点与 Actions 探活结果
-const site = await fetch('https://duruo0815.github.io/free-llm-radar/');
-console.log('站点 HTTP:', site.status);
+// 验证线上站点与 Actions 探活结果；可传自定义站点地址：node scripts/verify-live.mjs https://xxx
+const base = (process.argv[2] || 'https://duruo0815.github.io/free-llm-radar/').replace(/\/?$/, '/');
+const site = await fetch(base);
+console.log('站点 HTTP:', site.status, base);
 
-const raw = await (await fetch('https://duruo0815.github.io/free-llm-radar/data.js')).text();
+const raw = await (await fetch(base + 'data.js')).text();
 const j = JSON.parse(raw.replace(/^[\s\S]*?window\.RADAR_DATA\s*=\s*/, '').replace(/;\s*$/, ''));
 const v = j.views.intl;
 const entries = Object.entries(v.results);

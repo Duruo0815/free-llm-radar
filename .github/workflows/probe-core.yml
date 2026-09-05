@@ -1,0 +1,114 @@
+# 可复用探活流水线：由 probe.yml（国际视角）和 probe-cn.yml（国内视角）调用。
+# 职责：探活 -> 抓取免费模型（仅 intl）-> 变更追踪 -> 构建 -> 推送 -> 部署。
+# run_probe=false 时跳过检测，只用仓库现有数据构建部署（push 触发时使用，节省各家配额）。
+# 注意：不要与本仓库其他工作流共用 concurrency 组——cn 视角在没有 runner 时会一直排队，
+# 共用组会导致国际视角的部署被堵死。deploy-pages 是原子操作，独立部署互不冲突。
+name: Probe Core
+
+on:
+  workflow_call:
+    inputs:
+      view:
+        required: false
+        type: string
+        default: intl
+      run_probe:
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 探活检测
+        if: ${{ inputs.run_probe }}
+        run: node scripts/probe.mjs --view=${{ inputs.view }}
+        env:
+          # 第三级"免费实测"需要密钥：在仓库 Settings → Secrets and variables → Actions
+          # 中添加同名 Secret，未配置的会自动跳过该级
+          RADAR_KEY_ZHIPU: ${{ secrets.RADAR_KEY_ZHIPU }}
+          RADAR_KEY_SILICONFLOW: ${{ secrets.RADAR_KEY_SILICONFLOW }}
+          RADAR_KEY_MODELSCOPE: ${{ secrets.RADAR_KEY_MODELSCOPE }}
+          RADAR_KEY_HUNYUAN: ${{ secrets.RADAR_KEY_HUNYUAN }}
+          RADAR_KEY_SPARK: ${{ secrets.RADAR_KEY_SPARK }}
+          RADAR_KEY_BAILIAN: ${{ secrets.RADAR_KEY_BAILIAN }}
+          RADAR_KEY_ARK: ${{ secrets.RADAR_KEY_ARK }}
+          RADAR_KEY_QIANFAN: ${{ secrets.RADAR_KEY_QIANFAN }}
+          RADAR_KEY_MOONSHOT: ${{ secrets.RADAR_KEY_MOONSHOT }}
+          RADAR_KEY_MINIMAX: ${{ secrets.RADAR_KEY_MINIMAX }}
+          RADAR_KEY_GOOGLE: ${{ secrets.RADAR_KEY_GOOGLE }}
+          RADAR_KEY_OPENROUTER: ${{ secrets.RADAR_KEY_OPENROUTER }}
+          RADAR_KEY_GROQ: ${{ secrets.RADAR_KEY_GROQ }}
+          RADAR_KEY_CEREBRAS: ${{ secrets.RADAR_KEY_CEREBRAS }}
+          RADAR_KEY_GITHUB: ${{ secrets.RADAR_KEY_GITHUB }}
+          RADAR_KEY_MISTRAL: ${{ secrets.RADAR_KEY_MISTRAL }}
+          RADAR_KEY_NVIDIA: ${{ secrets.RADAR_KEY_NVIDIA }}
+          RADAR_KEY_SAMBANOVA: ${{ secrets.RADAR_KEY_SAMBANOVA }}
+          RADAR_KEY_COHERE: ${{ secrets.RADAR_KEY_COHERE }}
+          RADAR_KEY_ZAI: ${{ secrets.RADAR_KEY_ZAI }}
+          RADAR_KEY_VERCEL: ${{ secrets.RADAR_KEY_VERCEL }}
+          RADAR_KEY_DEEPSEEK: ${{ secrets.RADAR_KEY_DEEPSEEK }}
+
+      - name: 抓取中转站免费模型
+        if: ${{ inputs.run_probe && inputs.view == 'intl' }}
+        run: node scripts/fetch-free-models.mjs
+        continue-on-error: true
+
+      - name: 生成变更事件
+        if: ${{ inputs.run_probe }}
+        run: node scripts/track-changes.mjs --view=${{ inputs.view }}
+
+      - name: 构建站点数据
+        run: node scripts/build.mjs
+
+      - name: 推送变更通知
+        if: ${{ inputs.run_probe }}
+        run: node scripts/notify.mjs --view=${{ inputs.view }}
+        continue-on-error: true
+        env:
+          RADAR_TG_TOKEN: ${{ secrets.RADAR_TG_TOKEN }}
+          RADAR_TG_CHAT: ${{ secrets.RADAR_TG_CHAT }}
+          RADAR_WECOM_WEBHOOK: ${{ secrets.RADAR_WECOM_WEBHOOK }}
+          RADAR_BARK_URL: ${{ secrets.RADAR_BARK_URL }}
+          RADAR_NOTIFY_WEBHOOK: ${{ secrets.RADAR_NOTIFY_WEBHOOK }}
+
+      # 提交信息带 [skip ci]：push 触发的部署工作流会跳过，避免同一份数据重复部署
+      - name: 提交最新数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ site/data.js
+          if ! git diff --cached --quiet; then
+            git commit -m "probe(${{ inputs.view }}): update availability data [skip ci]"
+            git pull --rebase --autostash origin main
+            git push
+          else
+            echo "no changes to commit"
+          fi
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传站点产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: 部署
+        id: deployment
+        uses: actions/deploy-pages@v4

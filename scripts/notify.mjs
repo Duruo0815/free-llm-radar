@@ -1,5 +1,5 @@
-// 变化推送：把上次通知之后的新事件推送到已配置的渠道（可同时配多个）。
-// 渠道配置（环境变量 / GitHub Secrets）：
+// 变化推送：把本视角上次通知之后的新事件推送到已配置的渠道（可同时配多个）。
+// 运行：node scripts/notify.mjs --view=intl（默认 intl）；渠道配置（环境变量 / GitHub Secrets）：
 //   Telegram : RADAR_TG_TOKEN + RADAR_TG_CHAT
 //   企业微信 : RADAR_WECOM_WEBHOOK（群机器人 webhook 地址）
 //   Bark    : RADAR_BARK_URL（如 https://api.day.app/你的key）
@@ -10,14 +10,18 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+const VIEW = process.argv.includes('--view=cn') || process.env.RADAR_VIEW === 'cn' ? 'cn' : 'intl';
+const STATE_FILE = `state-${VIEW}.json`;
+const EVENTS_FILE = `events-${VIEW}.json`;
+
 const readJson = async (name, fallback) =>
   readFile(path.join(root, 'data', name), 'utf8').then(JSON.parse).catch(() => fallback);
 
 const ICON = { down: '🔴', up: '🟢', 'models-': '📉', 'models+': '📈', deadline: '⏰' };
 const LABEL = { down: '掉线', up: '恢复', 'models-': '免费模型减少', 'models+': '免费模型增加', deadline: '截止预警' };
 
-const events = await readJson('events.json', []);
-const state = await readJson('state.json', {});
+const events = await readJson(EVENTS_FILE, []);
+const state = await readJson(STATE_FILE, { notifiedAt: null });
 const lastNotified = state.notifiedAt;
 
 // 只推送比上次通知更新的事件，单次最多 15 条防止刷屏
@@ -26,12 +30,13 @@ const fresh = events
   .slice(0, 15);
 
 if (!fresh.length) {
-  console.log('notify: 没有新事件，跳过');
+  console.log(`notify[${VIEW}]: 没有新事件，跳过`);
   process.exit(0);
 }
 
-const lines = fresh.map((e) => `${ICON[e.type] || '•'} [${LABEL[e.type] || e.type}] ${e.name}${e.view ? `（${e.view === 'cn' ? '国内' : '国际'}视角）` : ''}${e.detail ? `：${e.detail}` : ''}`);
-const title = `免费大模型雷达：${fresh.length} 条新动态`;
+const viewTag = VIEW === 'cn' ? '（国内视角）' : '（国际视角）';
+const lines = fresh.map((e) => `${ICON[e.type] || '•'} [${LABEL[e.type] || e.type}] ${e.name}${e.detail ? `：${e.detail}` : ''}`);
+const title = `免费大模型雷达${viewTag}：${fresh.length} 条新动态`;
 const text = `${title}\n${lines.join('\n')}`;
 console.log('--- 推送内容预览 ---');
 console.log(text);
@@ -101,4 +106,4 @@ if (sent === 0) console.log('（未配置任何推送渠道，dry-run 完成）'
 
 // 无论是否配置渠道都推进通知水位，避免历史事件在配好渠道后被一次性轰炸
 state.notifiedAt = new Date().toISOString();
-await writeFile(path.join(root, 'data', 'state.json'), JSON.stringify(state, null, 2) + '\n');
+await writeFile(path.join(root, 'data', STATE_FILE), JSON.stringify(state, null, 2) + '\n');

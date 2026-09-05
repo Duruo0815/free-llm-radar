@@ -5,12 +5,20 @@ setlocal
 cd /d "D:\Zcode WorkSpace\free-llm-radar"
 if not exist logs mkdir logs
 set LOG=logs\cn-probe.log
+rem 日志轮转：超过 400 行时只保留最后 200 行
+if exist %LOG% (
+  for /f %%A in ('type %LOG% ^| find /c /v ""') do set LINES=%%A
+)
+if defined LINES if %LINES% GTR 400 (
+  more +200 %LOG% > %LOG%.tmp
+  move /y %LOG%.tmp %LOG% >nul
+)
 
 echo ====== %date% %time% ====== >> %LOG%
 git pull --rebase --autostash origin main >> %LOG% 2>&1
 node scripts/probe.mjs --view=cn >> %LOG% 2>&1
-node scripts/track-changes.mjs >> %LOG% 2>&1
-node scripts/notify.mjs >> %LOG% 2>&1
+node scripts/track-changes.mjs --view=cn >> %LOG% 2>&1
+node scripts/notify.mjs --view=cn >> %LOG% 2>&1
 node scripts/build.mjs >> %LOG% 2>&1
 git add data/ site/data.js
 git diff --cached --quiet
