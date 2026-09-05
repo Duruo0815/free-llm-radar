@@ -1,0 +1,101 @@
+name: Probe & Deploy
+
+on:
+  schedule:
+    # 每 6 小时自动检测一次（UTC 时间）
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: probe-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  probe-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 探活检测（国际视角）
+        run: node scripts/probe.mjs
+        env:
+          # 第三级"免费实测"需要密钥：在仓库 Settings → Secrets and variables → Actions
+          # 中添加同名 Secret，未配置的会自动跳过该级
+          RADAR_KEY_ZHIPU: ${{ secrets.RADAR_KEY_ZHIPU }}
+          RADAR_KEY_SILICONFLOW: ${{ secrets.RADAR_KEY_SILICONFLOW }}
+          RADAR_KEY_MODELSCOPE: ${{ secrets.RADAR_KEY_MODELSCOPE }}
+          RADAR_KEY_HUNYUAN: ${{ secrets.RADAR_KEY_HUNYUAN }}
+          RADAR_KEY_SPARK: ${{ secrets.RADAR_KEY_SPARK }}
+          RADAR_KEY_BAILIAN: ${{ secrets.RADAR_KEY_BAILIAN }}
+          RADAR_KEY_ARK: ${{ secrets.RADAR_KEY_ARK }}
+          RADAR_KEY_QIANFAN: ${{ secrets.RADAR_KEY_QIANFAN }}
+          RADAR_KEY_MOONSHOT: ${{ secrets.RADAR_KEY_MOONSHOT }}
+          RADAR_KEY_MINIMAX: ${{ secrets.RADAR_KEY_MINIMAX }}
+          RADAR_KEY_GOOGLE: ${{ secrets.RADAR_KEY_GOOGLE }}
+          RADAR_KEY_OPENROUTER: ${{ secrets.RADAR_KEY_OPENROUTER }}
+          RADAR_KEY_GROQ: ${{ secrets.RADAR_KEY_GROQ }}
+          RADAR_KEY_CEREBRAS: ${{ secrets.RADAR_KEY_CEREBRAS }}
+          RADAR_KEY_GITHUB: ${{ secrets.RADAR_KEY_GITHUB }}
+          RADAR_KEY_MISTRAL: ${{ secrets.RADAR_KEY_MISTRAL }}
+          RADAR_KEY_NVIDIA: ${{ secrets.RADAR_KEY_NVIDIA }}
+          RADAR_KEY_SAMBANOVA: ${{ secrets.RADAR_KEY_SAMBANOVA }}
+          RADAR_KEY_COHERE: ${{ secrets.RADAR_KEY_COHERE }}
+          RADAR_KEY_ZAI: ${{ secrets.RADAR_KEY_ZAI }}
+          RADAR_KEY_VERCEL: ${{ secrets.RADAR_KEY_VERCEL }}
+          RADAR_KEY_DEEPSEEK: ${{ secrets.RADAR_KEY_DEEPSEEK }}
+
+      - name: 抓取中转站免费模型
+        run: node scripts/fetch-free-models.mjs
+
+      - name: 生成变更事件
+        run: node scripts/track-changes.mjs
+
+      - name: 构建站点数据
+        run: node scripts/build.mjs
+
+      - name: 推送变更通知
+        run: node scripts/notify.mjs
+        env:
+          RADAR_TG_TOKEN: ${{ secrets.RADAR_TG_TOKEN }}
+          RADAR_TG_CHAT: ${{ secrets.RADAR_TG_CHAT }}
+          RADAR_WECOM_WEBHOOK: ${{ secrets.RADAR_WECOM_WEBHOOK }}
+          RADAR_BARK_URL: ${{ secrets.RADAR_BARK_URL }}
+          RADAR_NOTIFY_WEBHOOK: ${{ secrets.RADAR_NOTIFY_WEBHOOK }}
+
+      - name: 提交最新数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ site/data.js
+          if ! git diff --cached --quiet; then
+            git commit -m "probe: update availability data $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "no changes to commit"
+          fi
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传站点产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: 部署
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>免费大模型雷达 · Free LLM Radar</title>
+  <meta name="description" content="定时检测全网可免费使用的大模型 API，在线状态一目了然，点击直达官网。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>" />
+  <script>
+    // 在 CSS 渲染前确定主题：手动选择优先，否则跟随系统
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('radar-theme'); } catch (e) {}
+      var t = saved || (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle" class="theme-toggle" type="button" title="切换主题">☀️</button>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <h1>📡 免费大模型雷达</h1>
+        <p class="subtitle">定时查验可免费使用的 AI 大模型服务 · 点击卡片直达官网</p>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="controls">
+      <input id="search" type="search" placeholder="搜索名称 / 模型 / 厂商 / 简介…" autocomplete="off" />
+      <div class="fgroup">
+        <span class="glabel">视角</span>
+        <div class="chips" id="viewChips"></div>
+      </div>
+      <div class="fgroup">
+        <span class="glabel">地区</span>
+        <div class="chips" id="regionChips"></div>
+      </div>
+      <div class="fgroup">
+        <span class="glabel">类别</span>
+        <div class="chips" id="kindChips"></div>
+      </div>
+      <div class="fgroup">
+        <span class="glabel">类型</span>
+        <div class="chips" id="typeChips"></div>
+      </div>
+      <div class="fgroup">
+        <span class="glabel">选项</span>
+        <label class="toggle"><input type="checkbox" id="onlyOk" /> 只看在线</label>
+        <label class="toggle"><input type="checkbox" id="onlyEnding" /> ⏰ 30天内截止</label>
+      </div>
+    </div>
+
+    <section class="grid" id="grid"></section>
+    <p class="empty" id="empty" hidden>没有符合条件的服务，试试放宽筛选。</p>
+
+    <section class="timeline" id="timelineSection" hidden>
+      <h2>📜 最近动态</h2>
+      <ul class="tl-list" id="tlList"></ul>
+      <p class="tl-note">事件由每轮检测自动生成：掉线/恢复（分视角）、免费模型增减、限时活动截止预警。可在 README 配置 Telegram / 企业微信 / Bark 推送。</p>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p id="methodNote">
+      三级检测：① 官网可达 → ② API 端点存活（401/403 也算存活）→ ③ 免费实测（配置密钥后发起真实请求，
+      验证免费档当前真的可用）。双网络视角：国际视角由 GitHub Actions 检测，国内视角由自建 runner/本地定时检测，
+      两路结论不一致时卡片会标注 🔀。本地检测结果取决于你当前的网络环境。
+    </p>
+    <p class="disclaimer">
+      ⚠️ 各平台免费政策变化很快，额度与限制以官网公告为准。标注 <span class="badge vpn">🪜 需代理</span>
+      的服务在中国大陆网络环境通常需要自行解决访问问题；标注 <span class="badge relay">中转/聚合</span>
+      的为第三方站点（非模型官方），免费额度、稳定性与数据隐私均无官方保障，请自行评估，勿用于敏感场景。
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
