@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "google-ai-studio",
+    "name": "Google AI Studio"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "github-models",
+    "name": "GitHub Models"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "mistral",
+    "name": "Mistral La Plateforme"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "huggingface",
+    "name": "Hugging Face 推理"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "bai",
+    "name": "B.AI"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "down",
+    "view": "intl",
+    "id": "trae",
+    "name": "Trae 国内版"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "copilot",
+    "name": "GitHub Copilot Free"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "antigravity",
+    "name": "Google Antigravity"
+  },
+  {
+    "t": "2026-09-05T04:56:17.365Z",
+    "type": "up",
+    "view": "intl",
+    "id": "poe",
+    "name": "Poe"
+  }
+]
