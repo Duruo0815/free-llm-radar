@@ -1,0 +1,31 @@
+[
+  {
+    "t": "2026-09-06T15:46:44.537Z",
+    "type": "down",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-09-06T15:46:44.537Z",
+    "type": "down",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-09-06T15:46:44.537Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
+    "t": "2026-09-06T15:46:44.537Z",
+    "type": "models-",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 22 → 21"
+  }
+]
