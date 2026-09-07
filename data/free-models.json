@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-09-07T12:57:10.497Z",
+  "lastRun": "2026-09-07T21:43:37.139Z",
   "sites": {
     "openrouter": {
-      "count": 21,
+      "count": 19,
       "models": [
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
@@ -13,8 +13,6 @@
         "inclusionai/ling-3.0-flash-fin:free",
         "inclusionai/ling-3.0-flash-sante:free",
         "liquid/lfm-2.5-2.6b:free",
-        "minimax/minimax-m2.7:free",
-        "minimax/minimax-m3:free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "nvidia/nemotron-3-super-120b-a12b:free",
         "nvidia/nemotron-3-ultra-550b-a55b:free",
