@@ -1,5 +1,26 @@
 [
   {
+    "t": "2026-09-08T11:39:02.019Z",
+    "type": "down",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-09-08T11:39:02.019Z",
+    "type": "down",
+    "view": "intl",
+    "id": "aixplain",
+    "name": "aiXplain"
+  },
+  {
+    "t": "2026-09-08T11:39:02.019Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-09-07T21:43:37.179Z",
     "type": "models-",
     "view": "intl",
