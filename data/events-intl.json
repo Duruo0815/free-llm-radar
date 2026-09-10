@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-09-10T11:48:43.204Z",
+    "type": "down",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
     "t": "2026-09-08T21:20:35.898Z",
     "type": "models+",
     "view": "intl",
