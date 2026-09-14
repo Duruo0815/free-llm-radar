@@ -1,5 +1,19 @@
 [
   {
+    "t": "2026-09-14T22:03:38.228Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-09-14T22:03:38.228Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-09-14T13:13:48.911Z",
     "type": "down",
     "view": "intl",

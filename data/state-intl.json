@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": false,
+    "stepfun": true,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": false,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-14T13:13:48.990Z"
+  "notifiedAt": "2026-09-14T22:03:38.313Z"
 }
