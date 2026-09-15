@@ -23,7 +23,7 @@
     "chatanywhere": true,
     "vgpt": true,
     "nanogpt": true,
-    "sambanova": false,
+    "sambanova": true,
     "ovh": true,
     "huggingface": true,
     "minimax": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 2
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-15T17:18:55.391Z"
+  "notifiedAt": "2026-09-15T21:45:45.824Z"
 }

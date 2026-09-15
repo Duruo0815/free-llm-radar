@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-09-15T21:45:45.728Z",
+    "type": "up",
+    "view": "intl",
+    "id": "sambanova",
+    "name": "SambaNova Cloud"
+  },
+  {
     "t": "2026-09-15T17:18:55.287Z",
     "type": "models+",
     "view": "intl",
