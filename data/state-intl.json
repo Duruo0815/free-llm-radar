@@ -23,7 +23,7 @@
     "chatanywhere": true,
     "vgpt": true,
     "nanogpt": true,
-    "sambanova": true,
+    "sambanova": false,
     "ovh": true,
     "huggingface": true,
     "minimax": true,
@@ -62,8 +62,8 @@
   "free": {
     "openrouter": 22,
     "vgpt": 3,
-    "tokenrouter": 3
+    "tokenrouter": 2
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-15T05:11:23.245Z"
+  "notifiedAt": "2026-09-15T12:06:04.502Z"
 }
