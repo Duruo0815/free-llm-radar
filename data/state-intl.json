@@ -40,7 +40,7 @@
     "trae": false,
     "copilot": true,
     "cursor": true,
-    "windsurf": false,
+    "windsurf": true,
     "lingma": true,
     "codegeex": true,
     "comate": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 2
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-16T17:14:02.310Z"
+  "notifiedAt": "2026-09-16T21:34:47.464Z"
 }
