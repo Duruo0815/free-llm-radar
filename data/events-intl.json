@@ -1,5 +1,13 @@
 [
   {
+    "t": "2026-09-16T17:14:02.224Z",
+    "type": "models+",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 23 → 24"
+  },
+  {
     "t": "2026-09-16T12:03:06.514Z",
     "type": "up",
     "view": "intl",
