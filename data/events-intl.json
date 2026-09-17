@@ -1,5 +1,34 @@
 [
   {
+    "t": "2026-09-17T05:09:54.956Z",
+    "type": "down",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-09-17T05:09:54.956Z",
+    "type": "down",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-09-17T05:09:54.956Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
+    "t": "2026-09-17T05:09:54.956Z",
+    "type": "models+",
+    "view": "intl",
+    "id": "tokenrouter",
+    "name": "TokenRouter",
+    "detail": "免费模型 2 → 3"
+  },
+  {
     "t": "2026-09-16T21:34:47.382Z",
     "type": "up",
     "view": "intl",

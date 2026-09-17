@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": true,
+    "qianfan": false,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -62,8 +62,8 @@
   "free": {
     "openrouter": 24,
     "vgpt": 3,
-    "tokenrouter": 2
+    "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-16T21:34:47.464Z"
+  "notifiedAt": "2026-09-17T05:09:55.053Z"
 }
