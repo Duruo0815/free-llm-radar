@@ -1,10 +1,11 @@
 {
-  "lastRun": "2026-09-17T21:38:13.334Z",
+  "lastRun": "2026-09-18T11:40:49.842Z",
   "sites": {
     "openrouter": {
       "count": 25,
       "models": [
         "cohere/north-mini-code:free",
+        "deepseek/deepseek-v4-flash-0731:free",
         "dots-studio/dots-3-note-preview:free",
         "google/gemma-4-26b-a4b-it:free",
         "google/gemma-4-31b-it:free",
@@ -25,7 +26,6 @@
         "poolside/laguna-s-2.1:free",
         "poolside/laguna-xs-2.1:free",
         "qwen/qwen3.8-27b:free",
-        "stealth/union-alpha",
         "thinkingmachines/inkling-small:free",
         "thinkingmachines/inkling:free",
         "z-ai/glm-5.2:free"
