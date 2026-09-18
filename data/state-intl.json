@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": false,
+    "qianfan": true,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": false,
+    "codegeex": true,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-18T11:40:49.982Z"
+  "notifiedAt": "2026-09-18T16:39:28.895Z"
 }
