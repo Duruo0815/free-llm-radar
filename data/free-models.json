@@ -1,11 +1,10 @@
 {
-  "lastRun": "2026-09-19T21:01:19.734Z",
+  "lastRun": "2026-09-20T05:21:40.148Z",
   "sites": {
     "openrouter": {
-      "count": 25,
+      "count": 24,
       "models": [
         "cohere/north-mini-code:free",
-        "deepseek/deepseek-v4-flash-0731:free",
         "dots-studio/dots-3-note-preview:free",
         "google/gemma-4-26b-a4b-it:free",
         "google/gemma-4-31b-it:free",
