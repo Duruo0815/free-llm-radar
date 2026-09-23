@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 23,
+    "openrouter": 24,
     "vgpt": 3,
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-23T17:23:32.571Z"
+  "notifiedAt": "2026-09-23T21:41:38.473Z"
 }
