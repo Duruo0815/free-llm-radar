@@ -1,5 +1,34 @@
 [
   {
+    "t": "2026-09-25T17:28:37.010Z",
+    "type": "up",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-09-25T17:28:37.010Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-09-25T17:28:37.010Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
+    "t": "2026-09-25T17:28:37.010Z",
+    "type": "models-",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 24 → 22"
+  },
+  {
     "t": "2026-09-25T12:06:12.798Z",
     "type": "down",
     "view": "intl",
