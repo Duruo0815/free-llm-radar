@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-09-25T17:28:36.960Z",
+  "lastRun": "2026-09-25T21:51:36.538Z",
   "sites": {
     "openrouter": {
-      "count": 22,
+      "count": 21,
       "models": [
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
@@ -24,8 +24,7 @@
         "qwen/qwen3.8-27b:free",
         "stealth/space-bunny-alpha",
         "thinkingmachines/inkling-small:free",
-        "thinkingmachines/inkling:free",
-        "z-ai/glm-5.2:free"
+        "thinkingmachines/inkling:free"
       ]
     },
     "vgpt": {
