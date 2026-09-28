@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-09-28T14:22:49.031Z",
+  "lastRun": "2026-09-28T23:27:16.054Z",
   "sites": {
     "openrouter": {
-      "count": 21,
+      "count": 20,
       "models": [
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
@@ -10,7 +10,6 @@
         "google/gemma-4-31b-it:free",
         "google/lyria-3-clip-preview",
         "google/lyria-3-pro-preview",
-        "inclusionai/ling-3.0-flash-fin:free",
         "inclusionai/ling-3.0-flash-sante:free",
         "liquid/lfm-2.5-2.6b:free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
