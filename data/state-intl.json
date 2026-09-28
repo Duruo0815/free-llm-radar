@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": true,
+    "qianfan": false,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -37,7 +37,7 @@
     "zukijourney": false,
     "aixplain": true,
     "zcode": true,
-    "trae": true,
+    "trae": false,
     "copilot": true,
     "cursor": true,
     "windsurf": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-09-28T05:45:59.389Z"
+  "notifiedAt": "2026-09-28T14:22:49.203Z"
 }
