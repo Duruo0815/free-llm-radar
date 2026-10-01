@@ -1,9 +1,10 @@
 {
-  "lastRun": "2026-10-01T06:24:30.227Z",
+  "lastRun": "2026-10-01T18:03:50.824Z",
   "sites": {
     "openrouter": {
-      "count": 20,
+      "count": 21,
       "models": [
+        "apodex/apodex-1.1-mini:free",
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
         "google/gemma-4-26b-a4b-it:free",

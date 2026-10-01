@@ -2,13 +2,13 @@
   "view": "intl",
   "site": {
     "zhipu": true,
-    "siliconflow": true,
+    "siliconflow": false,
     "modelscope": true,
     "hunyuan": true,
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": true,
+    "qianfan": false,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 20,
+    "openrouter": 21,
     "vgpt": 3,
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-01T06:24:30.406Z"
+  "notifiedAt": "2026-10-01T18:03:50.988Z"
 }
