@@ -6,7 +6,7 @@
     "modelscope": true,
     "hunyuan": true,
     "spark": true,
-    "bailian": false,
+    "bailian": true,
     "ark": true,
     "qianfan": true,
     "moonshot": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-05T06:10:57.286Z"
+  "notifiedAt": "2026-10-05T15:17:31.315Z"
 }
