@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-10-05T15:17:31.153Z",
+  "lastRun": "2026-10-06T00:15:22.487Z",
   "sites": {
     "openrouter": {
-      "count": 22,
+      "count": 20,
       "models": [
         "apodex/apodex-1.1-mini:free",
         "cohere/north-mini-code:free",
@@ -22,8 +22,6 @@
         "openrouter/free",
         "poolside/laguna-s-2.1:free",
         "poolside/laguna-xs-2.1:free",
-        "qwen/qwen3.8-27b:free",
-        "stealth/space-bunny-alpha",
         "thinkingmachines/inkling-small:free",
         "thinkingmachines/inkling:free"
       ]
