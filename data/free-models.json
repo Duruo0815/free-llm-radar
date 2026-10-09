@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-10-08T06:37:36.822Z",
+  "lastRun": "2026-10-09T06:38:54.074Z",
   "sites": {
     "openrouter": {
-      "count": 20,
+      "count": 19,
       "models": [
         "apodex/apodex-1.1-mini:free",
         "cohere/north-mini-code:free",
@@ -11,7 +11,6 @@
         "google/gemma-4-31b-it:free",
         "google/lyria-3-clip-preview",
         "google/lyria-3-pro-preview",
-        "inclusionai/ling-3.0-flash-sante:free",
         "inclusionai/ling-3.1-flash",
         "liquid/lfm-2.5-2.6b:free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
