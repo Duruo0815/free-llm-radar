@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": false,
+    "qianfan": true,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -37,12 +37,12 @@
     "zukijourney": false,
     "aixplain": true,
     "zcode": true,
-    "trae": true,
+    "trae": false,
     "copilot": true,
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": false,
+    "codegeex": true,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -65,5 +65,5 @@
     "tokenrouter": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-10T06:15:53.396Z"
+  "notifiedAt": "2026-10-10T13:01:41.448Z"
 }
