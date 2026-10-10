@@ -1,5 +1,33 @@
 [
   {
+    "t": "2026-10-10T06:15:53.279Z",
+    "type": "down",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-10-10T06:15:53.279Z",
+    "type": "down",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-10-10T06:15:53.279Z",
+    "type": "up",
+    "view": "intl",
+    "id": "trae",
+    "name": "Trae 国内版"
+  },
+  {
+    "t": "2026-10-10T06:15:53.279Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-09T06:38:54.114Z",
     "type": "up",
     "view": "intl",
