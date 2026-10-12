@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-11T22:25:25.058Z",
+  "lastRun": "2026-10-12T16:02:16.349Z",
   "sites": {
     "openrouter": {
       "count": 19,
@@ -25,20 +25,20 @@
         "thinkingmachines/inkling:free"
       ]
     },
-    "vgpt": {
-      "count": 3,
-      "models": [
-        "mj_fast_modal",
-        "mj_relax_modal",
-        "mj_turbo_modal"
-      ]
-    },
     "tokenrouter": {
       "count": 3,
       "models": [
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "stealth/ox-alpha",
         "stealth/union-alpha"
+      ]
+    },
+    "vgpt": {
+      "count": 3,
+      "models": [
+        "mj_fast_modal",
+        "mj_relax_modal",
+        "mj_turbo_modal"
       ]
     }
   }
