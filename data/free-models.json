@@ -1,17 +1,15 @@
 {
-  "lastRun": "2026-10-13T14:35:37.243Z",
+  "lastRun": "2026-10-13T23:07:34.613Z",
   "sites": {
     "openrouter": {
-      "count": 19,
+      "count": 17,
       "models": [
-        "apodex/apodex-1.1-mini:free",
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
         "google/gemma-4-26b-a4b-it:free",
         "google/gemma-4-31b-it:free",
         "google/lyria-3-clip-preview",
         "google/lyria-3-pro-preview",
-        "inclusionai/ling-3.1-flash",
         "liquid/lfm-2.5-2.6b:free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "nvidia/nemotron-3-super-120b-a12b:free",
