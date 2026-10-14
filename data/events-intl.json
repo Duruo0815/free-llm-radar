@@ -1,5 +1,26 @@
 [
   {
+    "t": "2026-10-14T12:20:02.606Z",
+    "type": "up",
+    "view": "intl",
+    "id": "yuluoqianxi",
+    "name": "雨落千息开放平台"
+  },
+  {
+    "t": "2026-10-14T12:20:02.606Z",
+    "type": "up",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
+    "t": "2026-10-14T12:20:02.606Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-13T23:07:34.666Z",
     "type": "down",
     "view": "intl",

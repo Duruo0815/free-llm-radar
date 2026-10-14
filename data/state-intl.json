@@ -19,8 +19,8 @@
     "cloudflare-ai": true,
     "nvidia-nim": true,
     "cohere": true,
-    "yuluoqianxi": false,
-    "chatanywhere": false,
+    "yuluoqianxi": true,
+    "chatanywhere": true,
     "vgpt": true,
     "nanogpt": true,
     "sambanova": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": false,
+    "codegeex": true,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-13T23:07:34.781Z"
+  "notifiedAt": "2026-10-14T12:20:02.705Z"
 }
