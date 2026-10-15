@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-10-15T12:03:10.086Z",
+  "lastRun": "2026-10-15T17:22:39.468Z",
   "sites": {
     "openrouter": {
-      "count": 17,
+      "count": 18,
       "models": [
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
@@ -16,6 +16,7 @@
         "nvidia/nemotron-3-ultra-550b-a55b:free",
         "nvidia/nemotron-3.5-content-safety:free",
         "nvidia/nemotron-3.5-lightning:free",
+        "nvidia/nemotron-3.5-super-vl:free",
         "openrouter/free",
         "poolside/laguna-s-2.1:free",
         "poolside/laguna-xs-2.1:free",
