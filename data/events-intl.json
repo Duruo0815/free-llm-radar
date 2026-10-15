@@ -1,5 +1,26 @@
 [
   {
+    "t": "2026-10-15T21:39:53.812Z",
+    "type": "up",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-10-15T21:39:53.812Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-10-15T21:39:53.812Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-15T17:22:39.518Z",
     "type": "down",
     "view": "intl",
