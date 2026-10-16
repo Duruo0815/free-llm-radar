@@ -1,5 +1,34 @@
 [
   {
+    "t": "2026-10-16T21:41:20.590Z",
+    "type": "up",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-10-16T21:41:20.590Z",
+    "type": "down",
+    "view": "intl",
+    "id": "yuluoqianxi",
+    "name": "雨落千息开放平台"
+  },
+  {
+    "t": "2026-10-16T21:41:20.590Z",
+    "type": "down",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
+    "t": "2026-10-16T21:41:20.590Z",
+    "type": "models+",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 18 → 19"
+  },
+  {
     "t": "2026-10-16T16:52:49.209Z",
     "type": "down",
     "view": "intl",
