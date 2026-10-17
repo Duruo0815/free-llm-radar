@@ -19,15 +19,15 @@
     "cloudflare-ai": true,
     "nvidia-nim": true,
     "cohere": true,
-    "yuluoqianxi": false,
-    "chatanywhere": false,
+    "yuluoqianxi": true,
+    "chatanywhere": true,
     "vgpt": true,
     "nanogpt": true,
     "sambanova": true,
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": false,
+    "stepfun": true,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-16T21:41:20.705Z"
+  "notifiedAt": "2026-10-17T04:58:23.752Z"
 }
