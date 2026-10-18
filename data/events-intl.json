@@ -1,5 +1,19 @@
 [
   {
+    "t": "2026-10-18T04:59:55.691Z",
+    "type": "up",
+    "view": "intl",
+    "id": "yuluoqianxi",
+    "name": "雨落千息开放平台"
+  },
+  {
+    "t": "2026-10-18T04:59:55.691Z",
+    "type": "up",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
     "t": "2026-10-17T20:57:18.002Z",
     "type": "down",
     "view": "intl",
