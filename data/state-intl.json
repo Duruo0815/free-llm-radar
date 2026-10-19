@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": true,
+    "qianfan": false,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 19,
+    "openrouter": 20,
     "tokenrouter": 3,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-19T05:13:06.580Z"
+  "notifiedAt": "2026-10-19T13:50:04.742Z"
 }
