@@ -6,7 +6,7 @@
     "modelscope": true,
     "hunyuan": true,
     "spark": true,
-    "bailian": false,
+    "bailian": true,
     "ark": true,
     "qianfan": true,
     "moonshot": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-18T16:10:31.000Z"
+  "notifiedAt": "2026-10-19T05:13:06.580Z"
 }
