@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": false,
+    "qianfan": true,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": false,
+    "stepfun": true,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-19T13:50:04.742Z"
+  "notifiedAt": "2026-10-19T22:40:18.806Z"
 }
