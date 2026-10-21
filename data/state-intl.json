@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 20,
+    "openrouter": 21,
     "tokenrouter": 3,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-21T12:13:50.697Z"
+  "notifiedAt": "2026-10-21T21:59:00.900Z"
 }

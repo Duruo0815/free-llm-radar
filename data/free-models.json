@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-10-21T17:34:52.235Z",
+  "lastRun": "2026-10-21T21:59:00.746Z",
   "sites": {
     "openrouter": {
-      "count": 20,
+      "count": 21,
       "models": [
         "cohere/north-mini-code:free",
         "dots-studio/dots-3-note-preview:free",
@@ -21,6 +21,7 @@
         "openrouter/free",
         "poolside/laguna-s-2.1:free",
         "poolside/laguna-xs-2.1:free",
+        "recursive/flint-v1.0:free",
         "thinkingmachines/inkling-small:free",
         "thinkingmachines/inkling:free",
         "xingchen-agi/xing4.0-29b-a4b:free"
