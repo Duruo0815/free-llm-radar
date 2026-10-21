@@ -1,5 +1,34 @@
 [
   {
+    "t": "2026-10-21T12:13:50.582Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-10-21T12:13:50.582Z",
+    "type": "up",
+    "view": "intl",
+    "id": "trae",
+    "name": "Trae 国内版"
+  },
+  {
+    "t": "2026-10-21T12:13:50.582Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
+    "t": "2026-10-21T12:13:50.582Z",
+    "type": "models-",
+    "view": "intl",
+    "id": "tokenrouter",
+    "name": "TokenRouter",
+    "detail": "免费模型 4 → 3"
+  },
+  {
     "t": "2026-10-21T05:10:49.349Z",
     "type": "down",
     "view": "intl",
@@ -1390,34 +1419,6 @@
   {
     "t": "2026-09-07T05:06:08.394Z",
     "type": "up",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-07T05:06:08.394Z",
-    "type": "up",
-    "view": "intl",
-    "id": "codegeex",
-    "name": "CodeGeeX"
-  },
-  {
-    "t": "2026-09-06T20:42:40.983Z",
-    "type": "up",
-    "view": "intl",
-    "id": "qianfan",
-    "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-06T15:46:44.537Z",
-    "type": "down",
-    "view": "intl",
-    "id": "qianfan",
-    "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-06T15:46:44.537Z",
-    "type": "down",
     "view": "intl",
     "id": "stepfun",
     "name": "阶跃星辰"

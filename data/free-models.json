@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-21T05:10:49.298Z",
+  "lastRun": "2026-10-21T12:13:50.530Z",
   "sites": {
     "openrouter": {
       "count": 20,
@@ -27,9 +27,8 @@
       ]
     },
     "tokenrouter": {
-      "count": 4,
+      "count": 3,
       "models": [
-        "minimax/minimax-m3.1-flash",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "stealth/ox-alpha",
         "stealth/union-alpha"
