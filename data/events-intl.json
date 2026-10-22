@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-10-22T12:16:26.615Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
     "t": "2026-10-22T05:14:49.267Z",
     "type": "up",
     "view": "intl",
@@ -1415,12 +1422,5 @@
     "view": "intl",
     "id": "codegeex",
     "name": "CodeGeeX"
-  },
-  {
-    "t": "2026-09-08T11:39:02.019Z",
-    "type": "down",
-    "view": "intl",
-    "id": "qianfan",
-    "name": "百度千帆"
   }
 ]
