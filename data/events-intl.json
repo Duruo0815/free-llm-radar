@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-10-22T05:14:49.267Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-21T21:59:00.795Z",
     "type": "down",
     "view": "intl",
@@ -1415,12 +1422,5 @@
     "view": "intl",
     "id": "qianfan",
     "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-08T11:39:02.019Z",
-    "type": "down",
-    "view": "intl",
-    "id": "aixplain",
-    "name": "aiXplain"
   }
 ]
