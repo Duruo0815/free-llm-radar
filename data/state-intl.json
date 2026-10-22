@@ -37,7 +37,7 @@
     "zukijourney": false,
     "aixplain": true,
     "zcode": true,
-    "trae": true,
+    "trae": false,
     "copilot": true,
     "cursor": true,
     "windsurf": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 21,
+    "openrouter": 20,
     "tokenrouter": 3,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-22T12:16:26.708Z"
+  "notifiedAt": "2026-10-22T17:31:01.204Z"
 }
