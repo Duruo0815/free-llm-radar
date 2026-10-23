@@ -1,19 +1,19 @@
 {
   "view": "intl",
-  "lastRun": "2026-10-22T21:51:45.050Z",
+  "lastRun": "2026-10-23T05:13:28.075Z",
   "results": {
     "zhipu": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 446
+        "ms": 467
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 419
+        "ms": 335
       },
       "call": {
         "ok": false,
@@ -27,13 +27,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1227
+        "ms": 1123
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 1025
+        "ms": 635
       },
       "call": {
         "ok": false,
@@ -47,13 +47,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1633
+        "ms": 1641
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 832
+        "ms": 1076
       },
       "call": {
         "ok": false,
@@ -67,13 +67,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1955
+        "ms": 2102
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 947
+        "ms": 804
       },
       "call": {
         "ok": false,
@@ -87,13 +87,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1564
+        "ms": 1735
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 1916
+        "ms": 1468
       },
       "call": {
         "ok": false,
@@ -102,58 +102,18 @@
         "model": "hunyuan-lite"
       }
     },
-    "google-ai-studio": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 214
-      },
-      "api": {
-        "status": 403,
-        "ok": false,
-        "alive": true,
-        "ms": 143
-      },
-      "call": {
-        "ok": false,
-        "level": "nokey",
-        "reason": "未配置密钥",
-        "model": "gemini-2.5-flash"
-      }
-    },
-    "openrouter": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 236
-      },
-      "api": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 87
-      },
-      "call": {
-        "ok": false,
-        "level": "nokey",
-        "reason": "未配置密钥",
-        "model": "deepseek/deepseek-r1:free"
-      }
-    },
     "bailian": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2447
+        "ms": 1928
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 916
+        "ms": 796
       },
       "call": {
         "ok": false,
@@ -162,24 +122,44 @@
         "model": "qwen-flash"
       }
     },
-    "ark": {
+    "openrouter": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1620
+        "ms": 61
       },
       "api": {
-        "status": 401,
-        "ok": false,
+        "status": 200,
+        "ok": true,
         "alive": true,
-        "ms": 766
+        "ms": 21
       },
       "call": {
         "ok": false,
         "level": "nokey",
         "reason": "未配置密钥",
-        "model": "doubao-seed-1.6-flash-250815"
+        "model": "deepseek/deepseek-r1:free"
+      }
+    },
+    "google-ai-studio": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 494
+      },
+      "api": {
+        "status": 403,
+        "ok": false,
+        "alive": true,
+        "ms": 107
+      },
+      "call": {
+        "ok": false,
+        "level": "nokey",
+        "reason": "未配置密钥",
+        "model": "gemini-2.5-flash"
       }
     },
     "groq": {
@@ -187,13 +167,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 535
+        "ms": 242
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 155
+        "ms": 74
       },
       "call": {
         "ok": false,
@@ -202,24 +182,24 @@
         "model": "llama-3.3-70b-versatile"
       }
     },
-    "github-models": {
+    "ark": {
       "website": {
-        "status": 404,
-        "ok": false,
-        "alive": true,
-        "ms": 166
-      },
-      "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 170
+        "ms": 1153
+      },
+      "api": {
+        "status": 401,
+        "ok": false,
+        "alive": true,
+        "ms": 1098
       },
       "call": {
         "ok": false,
         "level": "nokey",
         "reason": "未配置密钥",
-        "model": "openai/gpt-4.1-mini"
+        "model": "doubao-seed-1.6-flash-250815"
       }
     },
     "cerebras": {
@@ -227,13 +207,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 745
+        "ms": 286
       },
       "api": {
         "status": 403,
         "ok": false,
         "alive": true,
-        "ms": 300
+        "ms": 100
       },
       "call": {
         "ok": false,
@@ -242,18 +222,38 @@
         "model": "gpt-oss-120b"
       }
     },
+    "github-models": {
+      "website": {
+        "status": 404,
+        "ok": false,
+        "alive": true,
+        "ms": 136
+      },
+      "api": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 217
+      },
+      "call": {
+        "ok": false,
+        "level": "nokey",
+        "reason": "未配置密钥",
+        "model": "openai/gpt-4.1-mini"
+      }
+    },
     "mistral": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 132
+        "ms": 93
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 356
+        "ms": 200
       },
       "call": {
         "ok": false,
@@ -267,33 +267,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 273
+        "ms": 121
       },
       "api": {
         "status": 400,
         "ok": false,
         "alive": true,
-        "ms": 184
-      }
-    },
-    "moonshot": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 1244
-      },
-      "api": {
-        "status": 401,
-        "ok": false,
-        "alive": true,
-        "ms": 1290
-      },
-      "call": {
-        "ok": false,
-        "level": "nokey",
-        "reason": "未配置密钥",
-        "model": "moonshot-v1-8k"
+        "ms": 99
       }
     },
     "cohere": {
@@ -301,13 +281,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 113
+        "ms": 95
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 861
+        "ms": 171
       },
       "call": {
         "ok": false,
@@ -316,18 +296,52 @@
         "model": "command-r7b-12-2024"
       }
     },
-    "vgpt": {
+    "moonshot": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 426
+        "ms": 1095
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 588
+        "ms": 1117
+      },
+      "call": {
+        "ok": false,
+        "level": "nokey",
+        "reason": "未配置密钥",
+        "model": "moonshot-v1-8k"
+      }
+    },
+    "vgpt": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 177
+      },
+      "api": {
+        "status": 401,
+        "ok": false,
+        "alive": true,
+        "ms": 183
+      }
+    },
+    "chatanywhere": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 875
+      },
+      "api": {
+        "status": 401,
+        "ok": false,
+        "alive": true,
+        "ms": 249
       }
     },
     "nanogpt": {
@@ -335,21 +349,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 153
+        "ms": 109
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 228
-      }
-    },
-    "yuluoqianxi": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 2460
+        "ms": 276
       }
     },
     "qianfan": {
@@ -357,13 +363,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 4261
+        "ms": 2651
       },
       "api": {
-        "status": 429,
+        "status": 403,
         "ok": false,
         "alive": true,
-        "ms": 1288
+        "ms": 1065
       },
       "call": {
         "ok": false,
@@ -377,27 +383,21 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 76
+        "ms": 33
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 138
+        "ms": 102
       }
     },
-    "chatanywhere": {
+    "yuluoqianxi": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2548
-      },
-      "api": {
-        "status": 401,
-        "ok": false,
-        "alive": true,
-        "ms": 250
+        "ms": 2841
       }
     },
     "sambanova": {
@@ -405,13 +405,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 933
+        "ms": 1794
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 863
+        "ms": 467
       },
       "call": {
         "ok": false,
@@ -425,18 +425,18 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 232
+        "ms": 270
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 567
+        "ms": 759
       },
       "call": {
         "ok": true,
         "status": 200,
-        "ms": 1398,
+        "ms": 1585,
         "model": "gpt-oss-120b",
         "reason": ""
       }
@@ -446,13 +446,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 206
+        "ms": 138
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 669
+        "ms": 538
       }
     },
     "stepfun": {
@@ -460,33 +460,21 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1718
+        "ms": 1180
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 1287
+        "ms": 1030
       }
     },
-    "minimax": {
+    "bai": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2630
-      },
-      "api": {
-        "status": 401,
-        "ok": false,
-        "alive": true,
-        "ms": 1052
-      },
-      "call": {
-        "ok": false,
-        "level": "nokey",
-        "reason": "未配置密钥",
-        "model": "abab6.5s-chat"
+        "ms": 954
       }
     },
     "vercel-gateway": {
@@ -494,13 +482,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 210
+        "ms": 72
       },
       "api": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 178
+        "ms": 86
       },
       "call": {
         "ok": false,
@@ -509,34 +497,24 @@
         "model": "openai/gpt-4o-mini"
       }
     },
-    "bai": {
+    "minimax": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2064
-      }
-    },
-    "sensenova": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 1241
+        "ms": 2001
       },
       "api": {
-        "status": 404,
+        "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 1159
-      }
-    },
-    "aixplain": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 193
+        "ms": 1191
+      },
+      "call": {
+        "ok": false,
+        "level": "nokey",
+        "reason": "未配置密钥",
+        "model": "abab6.5s-chat"
       }
     },
     "zukijourney": {
@@ -544,21 +522,35 @@
         "status": 403,
         "ok": false,
         "alive": true,
-        "ms": 161
+        "ms": 101
       },
       "api": {
         "status": 403,
         "ok": false,
         "alive": true,
-        "ms": 284
+        "ms": 111
       }
     },
-    "zcode": {
+    "aixplain": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1248
+        "ms": 62
+      }
+    },
+    "sensenova": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 1135
+      },
+      "api": {
+        "status": 404,
+        "ok": false,
+        "alive": true,
+        "ms": 754
       }
     },
     "a4f": {
@@ -566,13 +558,53 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 819
+        "ms": 324
       },
       "api": {
         "status": 521,
         "ok": false,
         "alive": true,
-        "ms": 902
+        "ms": 310
+      }
+    },
+    "copilot": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 244
+      }
+    },
+    "cursor": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 311
+      }
+    },
+    "windsurf": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 312
+      }
+    },
+    "zcode": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 1286
+      }
+    },
+    "trae": {
+      "website": {
+        "status": 403,
+        "ok": false,
+        "alive": true,
+        "ms": 1002
       }
     },
     "zai": {
@@ -580,13 +612,13 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2345
+        "ms": 1801
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 512
+        "ms": 336
       },
       "call": {
         "ok": false,
@@ -595,72 +627,12 @@
         "model": "glm-4.5-flash"
       }
     },
-    "cursor": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 164
-      }
-    },
-    "copilot": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 291
-      }
-    },
-    "trae": {
-      "website": {
-        "status": 403,
-        "ok": false,
-        "alive": true,
-        "ms": 1382
-      }
-    },
-    "windsurf": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 520
-      }
-    },
     "codegeex": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 992
-      }
-    },
-    "nvidia-nim": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 10133
-      },
-      "api": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 161
-      },
-      "call": {
-        "ok": false,
-        "level": "nokey",
-        "reason": "未配置密钥",
-        "model": "meta/llama-3.1-8b-instruct"
-      }
-    },
-    "workbuddy": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 1037
+        "ms": 981
       }
     },
     "comate": {
@@ -668,7 +640,15 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1524
+        "ms": 1415
+      }
+    },
+    "workbuddy": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 1394
       }
     },
     "codebuddy": {
@@ -676,7 +656,15 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1078
+        "ms": 749
+      }
+    },
+    "lingma": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 2691
       }
     },
     "yuanbao": {
@@ -684,7 +672,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1036
+        "ms": 1095
       }
     },
     "deepseek-app": {
@@ -692,7 +680,7 @@
         "status": 202,
         "ok": true,
         "alive": true,
-        "ms": 232
+        "ms": 37
       }
     },
     "deepseek-platform": {
@@ -700,13 +688,13 @@
         "status": 202,
         "ok": true,
         "alive": true,
-        "ms": 274
+        "ms": 48
       },
       "api": {
         "status": 401,
         "ok": false,
         "alive": true,
-        "ms": 528
+        "ms": 351
       },
       "call": {
         "ok": false,
@@ -715,12 +703,24 @@
         "model": "deepseek-chat"
       }
     },
-    "lingma": {
+    "nvidia-nim": {
       "website": {
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 3017
+        "ms": 10113
+      },
+      "api": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 135
+      },
+      "call": {
+        "ok": false,
+        "level": "nokey",
+        "reason": "未配置密钥",
+        "model": "meta/llama-3.1-8b-instruct"
       }
     },
     "antigravity": {
@@ -728,7 +728,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 168
+        "ms": 340
       }
     },
     "kimi-web": {
@@ -736,15 +736,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 689
-      }
-    },
-    "doubao": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 2132
+        "ms": 599
       }
     },
     "qingyan": {
@@ -752,15 +744,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 2021
-      }
-    },
-    "qoder": {
-      "website": {
-        "status": 200,
-        "ok": true,
-        "alive": true,
-        "ms": 705
+        "ms": 1789
       }
     },
     "kilo": {
@@ -768,7 +752,15 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 654
+        "ms": 209
+      }
+    },
+    "qoder": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 600
       }
     },
     "poe": {
@@ -776,7 +768,15 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 416
+        "ms": 356
+      }
+    },
+    "doubao": {
+      "website": {
+        "status": 200,
+        "ok": true,
+        "alive": true,
+        "ms": 2400
       }
     },
     "tokenhub": {
@@ -784,7 +784,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 559
+        "ms": 596
       }
     },
     "scnet": {
@@ -792,7 +792,7 @@
         "status": 200,
         "ok": true,
         "alive": true,
-        "ms": 1679
+        "ms": 1548
       }
     }
   }
