@@ -1,5 +1,19 @@
 [
   {
+    "t": "2026-10-26T05:10:32.968Z",
+    "type": "up",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
+    "t": "2026-10-26T05:10:32.968Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-25T21:11:46.753Z",
     "type": "down",
     "view": "intl",
@@ -1407,19 +1421,5 @@
     "view": "intl",
     "id": "codegeex",
     "name": "CodeGeeX"
-  },
-  {
-    "t": "2026-09-14T13:13:48.911Z",
-    "type": "down",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-13T12:13:57.361Z",
-    "type": "up",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
   }
 ]
