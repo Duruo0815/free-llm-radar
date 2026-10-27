@@ -1,5 +1,20 @@
 [
   {
+    "t": "2026-10-27T12:36:38.469Z",
+    "type": "down",
+    "view": "intl",
+    "id": "yuluoqianxi",
+    "name": "雨落千息开放平台"
+  },
+  {
+    "t": "2026-10-27T12:36:38.469Z",
+    "type": "models-",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 20 → 19"
+  },
+  {
     "t": "2026-10-26T05:10:32.968Z",
     "type": "up",
     "view": "intl",
@@ -1404,20 +1419,6 @@
   {
     "t": "2026-09-15T05:11:23.143Z",
     "type": "up",
-    "view": "intl",
-    "id": "codegeex",
-    "name": "CodeGeeX"
-  },
-  {
-    "t": "2026-09-14T22:03:38.228Z",
-    "type": "up",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-14T22:03:38.228Z",
-    "type": "down",
     "view": "intl",
     "id": "codegeex",
     "name": "CodeGeeX"
