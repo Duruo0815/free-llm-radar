@@ -1,5 +1,19 @@
 [
   {
+    "t": "2026-10-28T06:07:14.833Z",
+    "type": "up",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
+    "t": "2026-10-28T06:07:14.833Z",
+    "type": "up",
+    "view": "intl",
+    "id": "sensenova",
+    "name": "商汤日日新 SenseNova"
+  },
+  {
     "t": "2026-10-27T22:41:32.334Z",
     "type": "up",
     "view": "intl",
@@ -1406,20 +1420,5 @@
     "view": "intl",
     "id": "stepfun",
     "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-15T21:45:45.728Z",
-    "type": "up",
-    "view": "intl",
-    "id": "sambanova",
-    "name": "SambaNova Cloud"
-  },
-  {
-    "t": "2026-09-15T17:18:55.287Z",
-    "type": "models+",
-    "view": "intl",
-    "id": "openrouter",
-    "name": "OpenRouter",
-    "detail": "免费模型 22 → 23"
   }
 ]
