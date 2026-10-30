@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-10-30T06:17:53.791Z",
+    "type": "down",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-29T23:05:55.830Z",
     "type": "up",
     "view": "intl",
@@ -1411,13 +1418,5 @@
     "view": "intl",
     "id": "codegeex",
     "name": "CodeGeeX"
-  },
-  {
-    "t": "2026-09-17T05:09:54.956Z",
-    "type": "models+",
-    "view": "intl",
-    "id": "tokenrouter",
-    "name": "TokenRouter",
-    "detail": "免费模型 2 → 3"
   }
 ]

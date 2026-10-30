@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-29T23:05:55.929Z"
+  "notifiedAt": "2026-10-30T06:17:53.890Z"
 }
