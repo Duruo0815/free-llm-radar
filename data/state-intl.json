@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": false,
+    "stepfun": true,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-10-30T13:33:45.746Z"
+  "notifiedAt": "2026-10-30T22:45:54.524Z"
 }
