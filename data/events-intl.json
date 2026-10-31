@@ -1,5 +1,19 @@
 [
   {
+    "t": "2026-10-31T21:58:39.369Z",
+    "type": "up",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
+    "t": "2026-10-31T21:58:39.369Z",
+    "type": "up",
+    "view": "intl",
+    "id": "codegeex",
+    "name": "CodeGeeX"
+  },
+  {
     "t": "2026-10-31T13:08:05.139Z",
     "type": "models-",
     "view": "intl",
@@ -1405,19 +1419,5 @@
     "view": "intl",
     "id": "qianfan",
     "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-17T17:13:10.982Z",
-    "type": "down",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-17T17:13:10.982Z",
-    "type": "down",
-    "view": "intl",
-    "id": "codegeex",
-    "name": "CodeGeeX"
   }
 ]
