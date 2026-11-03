@@ -27,7 +27,7 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
@@ -55,7 +55,7 @@
     "antigravity": true,
     "qoder": true,
     "kilo": true,
-    "poe": true,
+    "poe": false,
     "scnet": true,
     "tokenhub": true
   },
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-02T22:02:54.171Z"
+  "notifiedAt": "2026-11-03T07:18:49.749Z"
 }
