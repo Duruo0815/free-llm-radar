@@ -1,5 +1,13 @@
 [
   {
+    "t": "2026-11-04T20:08:41.050Z",
+    "type": "models-",
+    "view": "intl",
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "detail": "免费模型 18 → 16"
+  },
+  {
     "t": "2026-11-04T07:04:30.784Z",
     "type": "models+",
     "view": "intl",
@@ -1412,12 +1420,5 @@
     "view": "intl",
     "id": "qianfan",
     "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-19T11:23:10.674Z",
-    "type": "up",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
   }
 ]
