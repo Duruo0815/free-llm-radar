@@ -55,7 +55,7 @@
     "antigravity": true,
     "qoder": true,
     "kilo": true,
-    "poe": true,
+    "poe": false,
     "scnet": true,
     "tokenhub": true
   },
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-04T20:08:41.153Z"
+  "notifiedAt": "2026-11-05T07:13:11.694Z"
 }
