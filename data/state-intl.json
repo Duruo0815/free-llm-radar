@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": false,
+    "codegeex": true,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 16,
+    "openrouter": 15,
     "tokenrouter": 3,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-06T07:23:34.534Z"
+  "notifiedAt": "2026-11-06T19:38:22.321Z"
 }
