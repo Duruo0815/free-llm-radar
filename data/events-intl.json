@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-11-09T07:12:40.287Z",
+    "type": "down",
+    "view": "intl",
+    "id": "stepfun",
+    "name": "阶跃星辰"
+  },
+  {
     "t": "2026-11-07T06:34:23.212Z",
     "type": "models+",
     "view": "intl",
@@ -1414,12 +1421,5 @@
     "view": "intl",
     "id": "stepfun",
     "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-20T05:21:40.186Z",
-    "type": "up",
-    "view": "intl",
-    "id": "codegeex",
-    "name": "CodeGeeX"
   }
 ]
