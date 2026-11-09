@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-09T07:12:40.239Z",
+  "lastRun": "2026-11-09T22:48:41.564Z",
   "sites": {
     "openrouter": {
       "count": 16,
@@ -18,7 +18,7 @@
         "nvidia/nemotron-3.5-super-vl:free",
         "openrouter/free",
         "recursive/flint-v1.0:free",
-        "stealth/crouton-alpha",
+        "thinkingmachines/inkling-2-small:free",
         "xingchen-agi/xing4.0-29b-a4b:free"
       ]
     },
