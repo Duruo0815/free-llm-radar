@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-11-12T07:35:11.782Z",
+    "type": "down",
+    "view": "intl",
+    "id": "qianfan",
+    "name": "百度千帆"
+  },
+  {
     "t": "2026-11-11T19:59:03.303Z",
     "type": "up",
     "view": "intl",
@@ -1414,12 +1421,5 @@
     "view": "intl",
     "id": "qianfan",
     "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-25T12:06:12.798Z",
-    "type": "down",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
   }
 ]
