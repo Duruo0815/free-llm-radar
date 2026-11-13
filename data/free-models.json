@@ -1,8 +1,8 @@
 {
-  "lastRun": "2026-11-12T20:18:00.821Z",
+  "lastRun": "2026-11-13T07:15:47.590Z",
   "sites": {
     "openrouter": {
-      "count": 17,
+      "count": 18,
       "models": [
         "apodex/apodex-1.1-mini:free",
         "baidu/ernie-5.5-flash-preview:free",
@@ -19,6 +19,7 @@
         "nvidia/nemotron-3.5-lightning:free",
         "nvidia/nemotron-3.5-super-vl:free",
         "openrouter/free",
+        "particle-ai/particle-1:free",
         "recursive/flint-v1.0:free",
         "thinkingmachines/inkling-2-small:free"
       ]
