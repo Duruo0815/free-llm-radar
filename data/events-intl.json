@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-11-17T21:25:28.784Z",
+    "type": "down",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
     "t": "2026-11-16T22:36:46.687Z",
     "type": "up",
     "view": "intl",
@@ -1416,12 +1423,5 @@
     "view": "intl",
     "id": "stepfun",
     "name": "阶跃星辰"
-  },
-  {
-    "t": "2026-09-28T14:22:49.085Z",
-    "type": "down",
-    "view": "intl",
-    "id": "trae",
-    "name": "Trae 国内版"
   }
 ]
