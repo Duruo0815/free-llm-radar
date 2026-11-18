@@ -1,5 +1,12 @@
 [
   {
+    "t": "2026-11-18T07:57:19.313Z",
+    "type": "up",
+    "view": "intl",
+    "id": "chatanywhere",
+    "name": "ChatAnywhere 免费API"
+  },
+  {
     "t": "2026-11-17T21:25:28.784Z",
     "type": "down",
     "view": "intl",
@@ -1416,12 +1423,5 @@
     "view": "intl",
     "id": "qianfan",
     "name": "百度千帆"
-  },
-  {
-    "t": "2026-09-28T14:22:49.085Z",
-    "type": "down",
-    "view": "intl",
-    "id": "stepfun",
-    "name": "阶跃星辰"
   }
 ]
