@@ -8,7 +8,7 @@
     "spark": true,
     "bailian": true,
     "ark": true,
-    "qianfan": false,
+    "qianfan": true,
     "moonshot": true,
     "google-ai-studio": true,
     "openrouter": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 17,
+    "openrouter": 16,
     "tokenrouter": 2,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-19T07:58:06.740Z"
+  "notifiedAt": "2026-11-19T21:04:59.115Z"
 }
