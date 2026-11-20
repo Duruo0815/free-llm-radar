@@ -3,9 +3,9 @@
   "site": {
     "zhipu": true,
     "siliconflow": true,
-    "modelscope": false,
+    "modelscope": true,
     "hunyuan": true,
-    "spark": false,
+    "spark": true,
     "bailian": true,
     "ark": true,
     "qianfan": true,
@@ -65,5 +65,5 @@
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-20T07:49:55.113Z"
+  "notifiedAt": "2026-11-20T20:39:32.588Z"
 }
