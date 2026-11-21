@@ -1,11 +1,10 @@
 {
-  "lastRun": "2026-11-20T20:39:32.464Z",
+  "lastRun": "2026-11-21T07:37:16.006Z",
   "sites": {
     "openrouter": {
-      "count": 15,
+      "count": 14,
       "models": [
         "baidu/ernie-5.5-flash-preview:free",
-        "dots-studio/dots-3-note-preview:free",
         "google/gemma-4-26b-a4b-it:free",
         "google/gemma-4-31b-it:free",
         "google/lyria-3-clip-preview",
