@@ -27,13 +27,13 @@
     "ovh": true,
     "huggingface": true,
     "minimax": true,
-    "stepfun": true,
+    "stepfun": false,
     "tokenrouter": true,
     "sensenova": true,
     "bai": true,
     "zai": true,
     "vercel-gateway": true,
-    "a4f": true,
+    "a4f": false,
     "zukijourney": false,
     "aixplain": true,
     "zcode": true,
@@ -42,7 +42,7 @@
     "cursor": true,
     "windsurf": true,
     "lingma": true,
-    "codegeex": true,
+    "codegeex": false,
     "comate": true,
     "workbuddy": true,
     "codebuddy": true,
@@ -60,10 +60,10 @@
     "tokenhub": true
   },
   "free": {
-    "openrouter": 15,
+    "openrouter": 14,
     "tokenrouter": 2,
     "vgpt": 3
   },
   "deadlineFlags": {},
-  "notifiedAt": "2026-11-24T10:18:09.360Z"
+  "notifiedAt": "2026-11-24T22:42:25.712Z"
 }
