@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-24T22:42:25.607Z",
+  "lastRun": "2026-11-25T09:10:20.382Z",
   "sites": {
     "openrouter": {
       "count": 14,
@@ -21,8 +21,9 @@
       ]
     },
     "tokenrouter": {
-      "count": 2,
+      "count": 3,
       "models": [
+        "deepseek/deepseek-v4.1-flash-1017-free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "stealth/union-alpha"
       ]
