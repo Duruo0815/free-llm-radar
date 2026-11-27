@@ -1,15 +1,14 @@
 {
-  "lastRun": "2026-11-27T08:58:00.792Z",
+  "lastRun": "2026-11-27T21:43:48.324Z",
   "sites": {
     "openrouter": {
-      "count": 14,
+      "count": 13,
       "models": [
         "baidu/ernie-5.5-flash-preview:free",
         "google/gemma-4-26b-a4b-it:free",
         "google/gemma-4-31b-it:free",
         "google/lyria-3-clip-preview",
         "google/lyria-3-pro-preview",
-        "inclusionai/ling-3.2-flash:free",
         "liquid/lfm-3-1.7b:free",
         "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "nvidia/nemotron-3-ultra-550b-a55b:free",
