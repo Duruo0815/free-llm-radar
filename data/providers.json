@@ -1259,5 +1259,26 @@
       "腾讯云账号",
       "实名认证"
     ]
+  },
+  {
+    "id": "beiluo-api",
+    "name": "北洛API",
+    "org": "北洛API",
+    "region": "国内",
+    "kind": "中转聚合",
+    "freeType": "免费额度",
+    "website": "https://beiluoxi.xyz/",
+    "console": "https://beiluoxi.xyz/keys",
+    "docs": "https://beiluoxi.xyz/help/_full.html",
+    "freeDesc": "登录后每日签到可领 $0.01–$0.10 站内余额，连续 7 天可加领 $0.20–$0.30。模型调用按量扣费。",
+    "models": [
+      "gpt-6.2-sol",
+      "claude-sonnet-4-6",
+      "deepseek-v4-pro"
+    ],
+    "needs": [
+      "注册并验证邮箱",
+      "登录后签到"
+    ]
   }
 ]
